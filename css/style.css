@@ -32,19 +32,28 @@
 }
 
 
+/* Body */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Header section */
-
-
-/* Nav and logo */
 
 .header {
     background-image: url(../img/header_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    /* media bg - cover maybe */
 }
 
+
+/* Nav and logo */
+
 .header__logo img {
-    margin: 21px 0 320px 15px;
+    margin: 21px 0 220px 15px;
 }
 
 .header__nav li {
@@ -99,10 +108,71 @@
 }
 
 .header__text img {
-    margin: 0 0 312px 120px;
+    margin: 0 0 200px 120px;
     transition: 0.5s;
 }
 
 .header__text img:hover {
     transform: scale(1.2);
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    background-color: #b9fee4;
+    /*Need to add dots at the bg
+    maybe do it with css
+    or layout's background-image 
+    of the block */
+}
+
+.about__heading img {
+    margin: 90px 0 25px 0;
+}
+
+.about__heading h3 {
+    margin-bottom: 28px;
+    font-family: Monterrat;
+    color: #3e705d;
+    font-size: 16px;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+}
+
+.about__heading h4 {
+    margin-bottom: 30px;
+    font-family: Monterrat;
+    color: #182b24;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.about__heading p {
+    font-family: OpenSans;
+    color: #3a3b3b;
+    font-size: 18px;
+    margin-bottom: 90px;
+}
+
+.about__block {
+    margin-bottom: 100px;
+}
+
+.about__block img {
+    margin-bottom: 40px;
+}
+
+.about__block h5 {
+    margin-bottom: 33px;
+    font-family: Montserrat;
+    font-size: 20px;
+    color: #182b24;
+    font-weight: 900;
+}
+
+.about__block p {
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #182b24;
 }
