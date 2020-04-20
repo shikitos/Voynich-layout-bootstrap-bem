@@ -37,6 +37,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Montserrat;
 }
 
 ul {
@@ -83,7 +84,6 @@ ul {
 .header__nav li {
     display: inline-block;
     margin: 56px 3px 0 3px;
-    font-family: Montserrat;
     font-size: 13px;
     letter-spacing: 0.075em;
     text-transform: uppercase;
@@ -103,11 +103,15 @@ ul {
     transition: 0.5s;
 }
 
+.fa-align-justify {
+    margin-left: 90%;
+    color: #ffffff;
+}
+
 
 /* Heading and Text with Link */
 
 .header__text h1 {
-    font-family: Montserrat;
     color: #b7fee3;
     font-size: 72px;
     line-height: 85px;
@@ -149,19 +153,18 @@ ul {
 
 .about__heading h3 {
     margin-bottom: 28px;
-    font-family: Monterrat;
     color: #3e705d;
     font-size: 16px;
     letter-spacing: 0.125em;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .about__heading h4 {
     margin-bottom: 30px;
-    font-family: Monterrat;
     color: #182b24;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .about__heading p {
@@ -181,7 +184,6 @@ ul {
 
 .about__block h5 {
     margin-bottom: 33px;
-    font-family: Montserrat;
     font-size: 20px;
     color: #182b24;
     font-weight: 900;
@@ -204,7 +206,6 @@ ul {
 }
 
 .features__text h3 {
-    font-family: Montserrat;
     color: #3e705d;
     font-size: 16px;
     letter-spacing: 0.125em;
@@ -214,7 +215,6 @@ ul {
 }
 
 .features__text h4 {
-    font-family: Montserrat;
     color: #182b24;
     font-size: 36px;
     font-weight: 700;
@@ -245,7 +245,6 @@ ul {
 }
 
 .features__cards h5 {
-    font-family: Montserrat;
     color: #3a3b3b;
     font-size: 24px;
     font-weight: 500;
@@ -273,7 +272,6 @@ ul {
 }
 
 .partners__text h4 {
-    font-family: Montserrat;
     color: #3e705d;
     font-size: 16px;
     letter-spacing: 0.125em;
@@ -283,7 +281,6 @@ ul {
 }
 
 .partners__text h5 {
-    font-family: Montserrat;
     font-size: 35px;
     color: #182b24;
     font-weight: 500;
@@ -291,7 +288,6 @@ ul {
 }
 
 .partners__text p {
-    font-family: Montserrat;
     color: #182b24;
     font-size: 16px;
     font-weight: 600;
@@ -316,7 +312,6 @@ ul {
 
 .testimonals__text h4 {
     text-transform: uppercase;
-    font-family: Montserrat;
     color: #3e705d;
     font-size: 16px;
     letter-spacing: 0.125em;
@@ -325,7 +320,6 @@ ul {
 }
 
 .testimonals__text h5 {
-    font-family: Montserrat;
     color: #182b24;
     font-size: 36px;
     font-weight: 600;
@@ -371,7 +365,6 @@ ul {
 
 .touch__text h4 {
     text-transform: uppercase;
-    font-family: Montserrat;
     color: #b7fee3;
     font-size: 16px;
     letter-spacing: 0.125em;
@@ -398,7 +391,6 @@ ul {
 }
 
 .touch__form h5 {
-    font-family: Montserrat;
     font-size: 18px;
     color: #f8f8f8;
     margin-bottom: 58px;
@@ -415,6 +407,7 @@ textarea {
     border-bottom: 2px solid #b7fee3;
     margin-bottom: 48px;
     width: 85%;
+    resize: none;
 }
 
 
@@ -449,7 +442,7 @@ textarea {
 }
 
 .touch__form input:-ms-input-placeholder {
-    color: ##f0f0f0;
+    color: #f0f0f0;
 }
 
 
@@ -465,7 +458,6 @@ textarea {
     /* float: right; }*/
 
 .touch__send p {
-    font-family: Montserrat;
     color: #b7fee3;
     font-size: 18px;
     margin-right: 40px;
@@ -484,7 +476,6 @@ textarea {
 /* Right column */
 
 .touch__contact h5 {
-    font-family: Montserrat;
     color: #ffffff;
     font-size: 18px;
 }
@@ -535,7 +526,6 @@ textarea {
 .touch__live {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Montserrat;
     color: #ffffff;
     letter-spacing: 0.1em;
     font-size: 13px;
@@ -549,8 +539,8 @@ textarea {
     color: #3e705d;
     background-color: #bcfee5;
     border-radius: 3px;
-    transition: 0.5s;
     padding: 20px 37px 20px 37px;
+    transition: 0.5s;
 }
 
 
@@ -565,4 +555,38 @@ textarea {
     font-family: OpenSans;
     font-size: 18px;
     color: #f8f8f8;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 767px) {
+    /* styles for xs-devices */
+    .features__text p {
+        max-width: 90%;
+    }
+    .features__cards {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* styles for sm-devices */
+    .features__text p {}
+    .features__cards {
+        flex: 0 0 100%;
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    /* styles for md-devices */
+    /* .header__nav {
+        margin-left: 16.66666%;
+    }*/
+}
+
+@media (min-width: 1200px) {
+    /* styles for lg-devices */
 }
