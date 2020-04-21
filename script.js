@@ -1,5 +1,5 @@
 function someFunc() {
-    // Выполняем действие, если ширина меньше 1000px
+    // Do it if the screen size is less than 1000
     var w = window.innerWidth;
     if (w < 1000) {
         var menu_icon = document.getElementById("menu_icon");
@@ -17,8 +17,8 @@ function someFunc() {
     }
 }
 
-// Выполняем заново при изменении размера окна
+// Do again with refresh the screen size
 window.addEventListener('resize', function() {
-    console.log("Размер окна изменен");
+    console.log("Resized");
     someFunc();
 });
